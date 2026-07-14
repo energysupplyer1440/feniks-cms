@@ -1,0 +1,24 @@
+{
+  "id": "europa7",
+  "name": "Apartamenty Europa Ap.7",
+  "address": "Ul. Rynek Nowomiejski 2, Toruń",
+  "filter": "Rynek",
+  "desc": "Apartament oferuje 2 nowocześnie urządzone sypialnie, dobrze wyposażoną kuchnię i nowoczesną łazienkę z prysznicem.",
+  "amenities": [
+    "2 sypialnie",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Telewizor",
+    "Suszarka",
+    "Mikrofala"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9219-1-1024x681.jpg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9219-1-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9282-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9245-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9303-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9296-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9253-1024x681.jpg"
+  ]
+}

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feniks Apartments - Toruń</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --gold: #c9a84c;
+            --gold-light: #e8d08a;
+            --dark: #1a1a2e;
+            --dark2: #16213e;
+            --card-bg: #ffffff;
+            --text: #2d2d2d;
+            --text-light: #6b7280;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --radius: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f7f4;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%);
+            color: white;
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(201,168,76,0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 50%, rgba(201,168,76,0.05) 0%, transparent 50%);
+        }
+        .hero-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(201,168,76,0.2);
+            color: var(--gold-light);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(201,168,76,0.3);
+        }
+        .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+        .hero h1 span { color: var(--gold); }
+        .hero p { font-size: 1.1rem; color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; }
+        .hero-stats {
+            display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .hero-stats div {
+            text-align: center;
+        }
+        .hero-stats .num { font-size: 1.8rem; font-weight: 700; color: var(--gold); }
+        .hero-stats .label { font-size: 0.8rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; }
+
+        /* FILTERS */
+        .filters {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 2rem;
+        }
+        .filters-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .filters-inner input[type="text"] {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.7rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+        .filters-inner input[type="text"]:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
+        }
+        .filter-btns {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            border: 1px solid #d1d5db;
+            background: white;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            color: var(--text-light);
+        }
+        .filter-btn:hover { border-color: var(--gold); color: var(--gold); }
+        .filter-btn.active {
+            background: var(--gold);
+            color: white;
+            border-color: var(--gold);
+        }
+
+        /* APARTMENTS GRID */
+        .grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+        }
+        .card-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+        .card-body {
+            padding: 1.25rem 1.5rem 1.5rem;
+        }
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: var(--dark);
+        }
+        .card-address {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .card-desc {
+            font-size: 0.9rem;
+            color: #4b5563;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+        .card-amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .card-amenities span {
+            background: #f3f4f6;
+            padding: 0.25rem 0.65rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            color: #374151;
+        }
+        .card-footer {
+            margin-top: 1rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid #f3f4f6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-btn {
+            background: var(--gold);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.25rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .card-btn:hover { background: #b89430; }
+        .card-more-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* LIGHTBOX / MODAL */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+        .modal-overlay.open { display: flex; align-items: center; justify-content: center; }
+        .modal {
+            background: white;
+            border-radius: var(--radius);
+            max-width: 900px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: modalIn 0.3s ease-out;
+        }
+        @keyframes modalIn {
+            from { opacity: 0; transform: scale(0.95) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .modal-close {
+            position: sticky;
+            top: 0;
+            float: right;
+            background: rgba(0,0,0,0.05);
+            border: none;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+            color: #666;
+        }
+        .modal-close:hover { background: rgba(0,0,0,0.1); }
+
+        .modal-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 0.5rem;
+            padding: 0 1.5rem 1.5rem;
+        }
+        .modal-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .modal-gallery img:hover { transform: scale(1.03); }
+        .modal-gallery img.main-photo {
+            grid-column: 1 / -1;
+            height: 400px;
+        }
+
+        .modal-body {
+            padding: 0 1.5rem 1.5rem;
+        }
+        .modal-body h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+        .modal-body .address {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .modal-body .desc {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .modal-body .amenities-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .modal-body .amenities-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .modal-body .amenities-list span {
+            background: #f3f4f6;
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+        }
+
+        /* REVIEWS */
+        .reviews {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .reviews-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        .reviews-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        .review-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .review-card:hover { transform: translateY(-3px); }
+        .review-stars {
+            color: var(--gold);
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+        }
+        .review-text {
+            font-size: 0.95rem;
+            color: #374151;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .review-text::before { content: '"'; }
+        .review-text::after { content: '"'; }
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .review-avatar {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        .review-name { font-weight: 600; font-size: 0.9rem; color: var(--dark); }
+        .review-apt { font-size: 0.8rem; color: var(--text-light); }
+
+        /* CALENDAR / HOTRES-STYLE BOOKING WIDGET */
+        .calendar-section {
+            padding: 1.5rem;
+            border-top: 1px solid #f3f4f6;
+            margin-top: 1rem;
+            background: #fafafa;
+        }
+        .calendar-section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .booking-bar {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.25rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            align-items: flex-end;
+        }
+        .booking-field {
+            flex: 1;
+            min-width: 130px;
+        }
+        .booking-field label {
+            display: block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+            font-weight: 600;
+        }
+        .booking-field input {
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+        .booking-field input:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
+        }
+        .booking-btn {
+            background: var(--gold);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            white-space: nowrap;
+            height: 40px;
+        }
+        .booking-btn:hover { background: #b89430; }
+        .booking-powered {
+            font-size: 0.7rem;
+            color: var(--text-light);
+            text-align: right;
+            margin-top: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0.3rem;
+        }
+        .booking-powered strong { color: var(--gold); }
+        .calendar-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+        .calendar-nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .calendar-nav button {
+            background: white;
+            border: 1px solid #e5e7eb;
+            width: 34px; height: 34px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            color: #374151;
+        }
+        .calendar-nav button:hover { border-color: var(--gold); color: var(--gold); }
+        .calendar-month {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 2px;
+            text-align: center;
+        }
+        .cal-day-name {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-light);
+            text-transform: uppercase;
+            padding: 0.4rem 0;
+        }
+        .cal-day {
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            cursor: default;
+        }
+        .cal-day.available { color: #065f46; cursor: pointer; }
+        .cal-day.available:hover { background: #d1fae5; }
+        .cal-day.booked { color: #dc2626; cursor: not-allowed; text-decoration: line-through; opacity: 0.5; }
+        .cal-day.today { border: 2px solid var(--gold); font-weight: 700; }
+        .cal-day.other-month { color: #d1d5db; }
+        .cal-day.empty { background: transparent; cursor: default; }
+        .cal-day.check-in { background: var(--gold); color: white !important; font-weight: 700; border-radius: 6px 0 0 6px; }
+        .cal-day.check-out { background: var(--gold); color: white !important; font-weight: 700; border-radius: 0 6px 6px 0; }
+        .cal-day.in-range { background: #fef3c7; color: #92400e; }
+        .cal-legend {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 0.75rem;
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+        .cal-legend span { display: flex; align-items: center; gap: 0.3rem; }
+        .cal-legend .dot {
+            width: 10px; height: 10px;
+            border-radius: 2px;
+            display: inline-block;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 2rem;
+        }
+        .footer a { color: var(--gold); text-decoration: none; }
+
+        /* RESPONSIVE */
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; padding: 1rem; }
+            .filters { padding: 0.75rem 1rem; }
+            .modal-gallery { grid-template-columns: 1fr; }
+            .modal-gallery img.main-photo { height: 250px; }
+            .modal-gallery img { height: 180px; }
+            .calendar-header { flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+            .calendar-grid { font-size: 0.8rem; }
+            .calendar-grid .cal-day { height: 36px; font-size: 0.8rem; }
+            .cal-legend { flex-wrap: wrap; justify-content: center; }
+        }
+
+        /* SCROLLBAR */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #999; }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">🏡 Apartamenty w Toruniu</div>
+        <h1>Feniks <span>Apartments</span></h1>
+        <p>Luksusowe apartamenty w sercu Torunia — idealne na krótki i długi pobyt</p>
+        <div class="hero-stats">
+            <div><div class="num">19</div><div class="label">Apartamentów</div></div>
+            <div><div class="num">6</div><div class="label">Lokalizacji</div></div>
+            <div><div class="num">⭐</div><div class="label">Wysoki standard</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- FILTERS -->
+<div class="filters" id="filters">
+    <div class="filters-inner">
+        <input type="text" id="searchInput" placeholder="🔍 Szukaj apartamentu, ulicy..." oninput="filterCards()">
+        <div class="filter-btns">
+            <button class="filter-btn active" onclick="setFilter('all', this)">Wszystkie</button>
+            <button class="filter-btn" onclick="setFilter('Bydgoska', this)">Bydgoska</button>
+            <button class="filter-btn" onclick="setFilter('PCK', this)">PCK</button>
+            <button class="filter-btn" onclick="setFilter('Cicha', this)">Cicha</button>
+            <button class="filter-btn" onclick="setFilter('Mostowa', this)">Mostowa</button>
+            <button class="filter-btn" onclick="setFilter('Rynek', this)">Rynek Nowomiejski</button>
+        </div>
+    </div>
+</div>
+
+<!-- APARTMENTS GRID -->
+<div class="grid" id="apartmentsGrid"></div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+    <div class="modal" id="modal">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div class="modal-gallery" id="modalGallery"></div>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="calendar-section" id="calendarSection">
+            <h3>📅 Sprawdź dostępność</h3>
+            <div class="booking-bar">
+                <div class="booking-field">
+                    <label>📆 Zameldowanie</label>
+                    <input type="date" id="checkIn">
+                </div>
+                <div class="booking-field">
+                    <label>📆 Wymeldowanie</label>
+                    <input type="date" id="checkOut">
+                </div>
+                <button class="booking-btn" onclick="alert('🔔 Demo: To jest testowy widżet rezerwacji.\n\nW rzeczywistej integracji z Hotres.pl:\n• Rezerwacje z Booking.com, Airbnb i innych są widoczne\n• Kalendarz synchronizuje się automatycznie\n• Goście rezerwują bezpośrednio przez stronę')">Sprawdź</button>
+            </div>
+            <div class="calendar-header">
+                <div class="calendar-month" id="calMonth"></div>
+                <div class="calendar-nav">
+                    <button onclick="calPrevMonth()">◀</button>
+                    <button onclick="calNextMonth()">▶</button>
+                </div>
+            </div>
+            <div class="calendar-grid" id="calGrid"></div>
+            <div class="cal-legend">
+                <span>🔵 Dostępny</span>
+                <span>🔴 Zarezerwowany</span>
+                <span>🟡 Wybrany termin</span>
+            </div>
+            <div class="booking-powered">
+                🔗 Rezerwacje z Booking.com, Airbnb i innych kanałów widoczne w jednym kalendarzu · <strong>Powered by Hotres</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+    <h2 class="reviews-title">⭐ Co mówią goście</h2>
+    <p class="reviews-subtitle">Prawdziwe opinie osób, które odwiedziły nasze apartamenty</p>
+    <div class="reviews-grid" id="reviewsGrid"></div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    <a href="https://feniksapartments.pl" target="_blank">Feniks Apartments</a> &bull; Stworzona przez KrzychuV2 🤖 &bull; <a href="/admin" target="_blank">⚙️ Panel CMS</a>
+</div>
+
+<script>
+// ===== DATA LOADER =====
+let apartments = [];
+let reviews = [];
+
+async function loadData() {
+    try {
+        const [aptRes, revRes] = await Promise.all([
+            fetch('data/apartments.json'),
+            fetch('data/reviews.json')
+        ]);
+        apartments = await aptRes.json();
+        reviews = await revRes.json();
+        
+        // Generate booked dates for each apartment
+        apartments.forEach(apt => {
+            apt.bookedDates = generateBookedDates(apt.id);
+        });
+        
+        initApp();
+    } catch (e) {
+        console.error('Failed to load data:', e);
+        document.getElementById('apartmentsGrid').innerHTML = 
+            '<div style="text-align:center;padding:4rem;color:var(--text-light);">⚠️ Nie udało się załadować danych. Sprawdź czy pliki data/apartments.json i data/reviews.json istnieją.</div>';
+    }
+}
+
+function initApp() {
+    renderCards(apartments);
+    renderReviews(reviews);
+}
+
+// ===== REVIEWS =====
+function renderReviews(data) {
+    const grid = document.getElementById('reviewsGrid');
+    grid.innerHTML = data.map(r => {
+        const initials = r.name.charAt(0);
+        const stars = '\u2605'.repeat(r.stars) + '\u2606'.repeat(5 - r.stars);
+        return `
+        <div class="review-card">
+            <div class="review-stars">${stars}</div>
+            <div class="review-text">${r.text}</div>
+            <div class="review-author">
+                <div class="review-avatar">${initials}</div>
+                <div>
+                    <div class="review-name">${r.name}</div>
+                    <div class="review-apt">\ud83c\udfe1 ${r.apt}</div>
+                </div>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+// ===== CALENDAR =====
+let calViewYear, calViewMonth, calCurrentAptId;
+
+function generateBookedDates(seed) {
+    const dates = [];
+    const today = new Date();
+    const months = [0, 1, 2];
+    let hash = 0;
+    for (let i = 0; i < seed.length; i++) {
+        hash = ((hash << 5) - hash) + seed.charCodeAt(i);
+        hash |= 0;
+    }
+    for (let m of months) {
+        const year = today.getFullYear();
+        const month = today.getMonth() + m;
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        const numBooked = 8 + (Math.abs(hash + m * 7) % 7);
+        const used = new Set();
+        for (let i = 0; i < numBooked; i++) {
+            let day = 1 + (Math.abs(hash + i * 13 + m * 31) % daysInMonth);
+            if (!used.has(day)) {
+                used.add(day);
+                dates.push(`${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`);
+            }
+        }
+    }
+    return dates;
+}
+
+function isDateBooked(apt, year, month, day) {
+    const ds = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+    return apt.bookedDates && apt.bookedDates.includes(ds);
+}
+
+function renderCalendar(apt, year, month) {
+    const monthNames = ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec',
+                        'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
+    document.getElementById('calMonth').textContent = `${monthNames[month]} ${year}`;
+    
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const daysInPrev = new Date(year, month, 0).getDate();
+    const today = new Date();
+    
+    const ci = document.getElementById('checkIn');
+    const co = document.getElementById('checkOut');
+    const checkInVal = ci.value ? new Date(ci.value + 'T00:00:00') : null;
+    const checkOutVal = co.value ? new Date(co.value + 'T00:00:00') : null;
+    
+    let grid = document.getElementById('calGrid');
+    const dayNames = ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'Sb', 'Nd'];
+    
+    let html = dayNames.map(d => `<div class="cal-day-name">${d}</div>`).join('');
+    
+    let startOffset = firstDay === 0 ? 6 : firstDay - 1;
+    for (let i = startOffset - 1; i >= 0; i--) {
+        html += `<div class="cal-day empty other-month">${daysInPrev - i}</div>`;
+    }
+    
+    for (let d = 1; d <= daysInMonth; d++) {
+        const dateObj = new Date(year, month, d);
+        const booked = isDateBooked(apt, year, month, d);
+        const isToday = year === today.getFullYear() && month === today.getMonth() && d === today.getDate();
+        const isPast = dateObj < new Date(today.getFullYear(), today.getMonth(), today.getDate());
+        
+        let cls = 'cal-day';
+        if (booked || isPast) cls += ' booked';
+        else cls += ' available';
+        if (isToday) cls += ' today';
+        
+        if (checkInVal && !checkOutVal && dateObj.getTime() === checkInVal.getTime()) cls += ' check-in';
+        else if (checkInVal && checkOutVal) {
+            if (dateObj.getTime() === checkInVal.getTime()) cls += ' check-in';
+            else if (dateObj.getTime() === checkOutVal.getTime()) cls += ' check-out';
+            else if (dateObj > checkInVal && dateObj < checkOutVal) cls += ' in-range';
+        }
+        
+        const onclick = (!booked && !isPast) ? `selectDate('${apt.id}', ${year}, ${month}, ${d})` : '';
+        html += `<div class="${cls}" ${onclick ? `onclick="${onclick}"` : ''}>${d}</div>`;
+    }
+    
+    const totalCells = startOffset + daysInMonth;
+    const remaining = (7 - (totalCells % 7)) % 7;
+    for (let d = 1; d <= remaining; d++) {
+        html += `<div class="cal-day empty other-month">${d}</div>`;
+    }
+    
+    grid.innerHTML = html;
+}
+
+function selectDate(aptId, year, month, day) {
+    const apt = apartments.find(a => a.id === aptId);
+    if (!apt) return;
+    const ci = document.getElementById('checkIn');
+    const co = document.getElementById('checkOut');
+    const clicked = new Date(year, month, day);
+    
+    if (!ci.value) {
+        ci.value = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        co.value = '';
+    } else if (!co.value) {
+        const checkInDate = new Date(ci.value + 'T00:00:00');
+        if (clicked <= checkInDate) {
+            ci.value = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+            co.value = '';
+        } else {
+            co.value = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        }
+    } else {
+        ci.value = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        co.value = '';
+    }
+    renderCalendar(apt, calViewYear, calViewMonth);
+}
+
+function openCalendarForApt(apt) {
+    const today = new Date();
+    calViewYear = today.getFullYear();
+    calViewMonth = today.getMonth();
+    calCurrentAptId = apt.id;
+    renderCalendar(apt, calViewYear, calViewMonth);
+}
+
+function calPrevMonth() {
+    calViewMonth--;
+    if (calViewMonth < 0) { calViewMonth = 11; calViewYear--; }
+    const apt = apartments.find(a => a.id === calCurrentAptId);
+    if (apt) renderCalendar(apt, calViewYear, calViewMonth);
+}
+
+function calNextMonth() {
+    calViewMonth++;
+    if (calViewMonth > 11) { calViewMonth = 0; calViewYear++; }
+    const apt = apartments.find(a => a.id === calCurrentAptId);
+    if (apt) renderCalendar(apt, calViewYear, calViewMonth);
+}
+
+// ===== RENDER =====
+let currentFilter = 'all';
+
+function renderCards(data) {
+    const grid = document.getElementById('apartmentsGrid');
+    grid.innerHTML = data.map(apt => {
+        const am = apt.amenities.slice(0, 4).map(a => `<span>${a}</span>`).join('');
+        const more = apt.amenities.length > 4 ? `<span class="card-more-label">+${apt.amenities.length - 4}</span>` : '';
+        return `
+        <div class="card" onclick="openModal('${apt.id}')">
+            <img class="card-img" src="${apt.mainPhoto}" alt="${apt.name}" loading="lazy">
+            <div class="card-body">
+                <div class="card-title">${apt.name}</div>
+                <div class="card-address">\ud83d\udccd ${apt.address}</div>
+                <div class="card-desc">${apt.desc}</div>
+                <div class="card-amenities">${am}${more}</div>
+                <div class="card-footer">
+                    <button class="card-btn">Zobacz więcej</button>
+                    <span style="font-size:0.8rem;color:var(--text-light)">${apt.photos.length} zdjęć</span>
+                </div>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+function openModal(id) {
+    const apt = apartments.find(a => a.id === id);
+    if (!apt) return;
+    
+    const gal = document.getElementById('modalGallery');
+    gal.innerHTML = apt.photos.map((p, i) => 
+        `<img src="${p}" alt="${apt.name} ${i+1}" class="${i===0?'main-photo':''}" loading="lazy">`
+    ).join('');
+    
+    const body = document.getElementById('modalBody');
+    body.innerHTML = `
+        <h2>${apt.name}</h2>
+        <div class="address">\ud83d\udccd ${apt.address}</div>
+        <div class="desc">${apt.desc}</div>
+        <div class="amenities-title">\ud83c\udff7\ufe0f Udogodnienia:</div>
+        <div class="amenities-list">${apt.amenities.map(a => `<span>${a}</span>`).join('')}</div>
+    `;
+    
+    openCalendarForApt(apt);
+    
+    document.getElementById('modalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+function closeModalOutside(e) {
+    if (e.target === document.getElementById('modalOverlay')) closeModal();
+}
+
+function filterCards() {
+    const search = document.getElementById('searchInput').value.toLowerCase();
+    const filtered = apartments.filter(apt => {
+        const matchFilter = currentFilter === 'all' || apt.filter === currentFilter;
+        const matchSearch = apt.name.toLowerCase().includes(search) || 
+                           apt.address.toLowerCase().includes(search) ||
+                           apt.desc.toLowerCase().includes(search);
+        return matchFilter && matchSearch;
+    });
+    renderCards(filtered);
+}
+
+function setFilter(filter, btn) {
+    currentFilter = filter;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    filterCards();
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// Load data on page load
+loadData();
+</script></script>
+
+</body>
+</html>

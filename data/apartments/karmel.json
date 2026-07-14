@@ -1,0 +1,25 @@
+{
+  "id": "karmel",
+  "name": "Apartament Karmel",
+  "address": "Ul. Bydgoska 80, Toruń",
+  "filter": "Bydgoska",
+  "desc": "Elegancki apartament oferuje przytulnie urządzoną sypialnię z łóżkiem dwuosobowym, salon z dobrze wyposażonym aneksem kuchennym i nowoczesną łazienkę z prysznicem.",
+  "amenities": [
+    "Piekarnik",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Deska do prasowania",
+    "Smart TV",
+    "Suszarka",
+    "Pralka"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1665-1-1024x768.jpeg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1665-1-1024x768.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1664-1024x768.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1663-1024x768.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1662-1024x768.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1661-1024x576.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1666-1024x768.jpeg"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "szymborska1",
+  "name": "Apartament Szymborska Nr.1",
+  "address": "Ul. Mostowa 18, Toruń",
+  "filter": "Mostowa",
+  "desc": "Elegancki apartament oferuje dużą, przytulnie urządzoną sypialnię z łóżkiem typu King size, salon z dobrze wyposażonym aneksem kuchennym i nowoczesną łazienkę z prysznicem.",
+  "amenities": [
+    "Łóżko King size",
+    "Zmywarka",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Smart TV",
+    "Suszarka",
+    "Pralka"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0273-1024x683.jpg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0273-1024x683.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0274-1024x683.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0277-1024x683.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0272-1024x678.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0282-1024x683.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0275-1024x683.jpg"
+  ]
+}

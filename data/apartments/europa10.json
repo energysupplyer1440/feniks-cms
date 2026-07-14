@@ -1,0 +1,23 @@
+{
+  "id": "europa10",
+  "name": "Apartamenty Europa Ap.10",
+  "address": "Ul. Rynek Nowomiejski 2, Toruń",
+  "filter": "Rynek",
+  "desc": "Apartament oferuje przytulną przestrzeń sypialnianą z salonem, dobrze wyposażony aneks kuchenny i łazienkę z prysznicem.",
+  "amenities": [
+    "Mikrofala",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Telewizor",
+    "Suszarka"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0614-1024x681.jpg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0614-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0621-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0637-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0612-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0614-1-1024x681.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0632-1024x681.jpg"
+  ]
+}

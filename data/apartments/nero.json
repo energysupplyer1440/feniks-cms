@@ -1,0 +1,28 @@
+{
+  "id": "nero",
+  "name": "Apartament Nero",
+  "address": "Ul. Polskiego Czerwonego Krzyża 3, Toruń",
+  "filter": "PCK",
+  "desc": "Apartament oferuje 2 sypialnie, salon z dobrze wyposażonym aneksem kuchennym i łazienkę z prysznicem. Mieszkanie posiada 2 balkony oraz miejsce parkingowe w garażu podziemnym wliczone w cenę. Oferujemy możliwość zakupu śniadania.",
+  "amenities": [
+    "2 sypialnie",
+    "2 balkony",
+    "Pralka",
+    "Piekarnik",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Telewizor",
+    "Suszarka",
+    "Miejsce parkingowe",
+    "Opcja śniadania"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125143210-2.jpg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125143210-2.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125150249.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0008-2-e1695821593881.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20230927153559.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20230927153536.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0027.jpg"
+  ]
+}

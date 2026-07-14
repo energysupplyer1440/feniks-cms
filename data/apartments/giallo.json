@@ -1,0 +1,27 @@
+{
+  "id": "giallo",
+  "name": "Apartament Giallo",
+  "address": "Ul. Polskiego Czerwonego Krzyża 3, Toruń",
+  "filter": "PCK",
+  "desc": "Apartament oferuje pięknie urządzoną sypialnię, salon z dobrze wyposażonym aneksem kuchennym i łazienkę z prysznicem. Mieszkanie posiada dwa balkony oraz miejsce parkingowe w garażu podziemnym wliczone w cenę. Oferujemy możliwość zakupu śniadania.",
+  "amenities": [
+    "2 balkony",
+    "Pralka",
+    "Piekarnik",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Smart TV",
+    "Suszarka",
+    "Miejsce parkingowe",
+    "Opcja śniadania"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/cropped-cid186e0bd4d1ab4c50ac51-scaled-1-1024x654.jpeg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/cropped-cid186e0bd4d1ab4c50ac51-scaled-1-1024x654.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125152412.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0bd4d3485258af23-1024x719.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125152309.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0bd4d6afc8651767-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0bd4d50e4e3036b5-1024x699.jpeg"
+  ]
+}

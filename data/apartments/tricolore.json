@@ -1,0 +1,27 @@
+{
+  "id": "tricolore",
+  "name": "Apartament Tricolore",
+  "address": "Ul. Polskiego Czerwonego Krzyża 3, Toruń",
+  "filter": "PCK",
+  "desc": "Apartament oferuje pięknie urządzoną sypialnię, salon z dobrze wyposażonym aneksem kuchennym i łazienkę z prysznicem. Mieszkanie posiada balkon oraz miejsce parkingowe w garażu podziemnym wliczone w cenę. Oferujemy możliwość zakupu śniadania.",
+  "amenities": [
+    "Balkon",
+    "Pralka",
+    "Piekarnik",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Telewizor",
+    "Suszarka",
+    "Miejsce parkingowe",
+    "Opcja śniadania"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125150720.jpg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125150720.jpg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0ce2a056976cf696-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0ce29bfdcd2b0cf1-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0bd4d8323813659-1024x728.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0ce29cecf8740052-1024x697.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0ce29eb6586a7ea4-1024x698.jpeg"
+  ]
+}

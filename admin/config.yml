@@ -1,0 +1,60 @@
+# Feniks Apartments — Decap CMS Configuration
+# Docs: https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: github
+  repo: energysupplyer1440/feniks-cms
+  branch: main
+
+# Gdy wrzucisz repo na GitHub i skonfigurujesz OAuth, CMS będzie dostępny pod:
+site_url: https://energysupplyer1440.github.io/feniks-cms
+display_url: https://energysupplyer1440.github.io/feniks-cms
+logo_url: https://feniksapartments.pl/wp-content/uploads/2023/09/cropped-cid186e0bd4d1ab4c50ac51-scaled-1-1024x654.jpeg
+
+locale: pl
+media_folder: "images"
+public_folder: "/images"
+
+# UWAGA: CMS zapisuje do osobnych plików (data/apartments/karmel.json itd.)
+# Build script (scripts/build.js) scala je w apartments.json i reviews.json
+# GitHub Actions odpalają build przy każdym pushu
+
+collections:
+  - name: "apartments"
+    label: "🏠 Apartamenty"
+    label_singular: "Apartament"
+    folder: "data/apartments"
+    create: true
+    delete: true
+    format: "json"
+    extension: "json"
+    slug: "{{id}}"
+    identifier_field: "name"
+    summary: "{{name}} — {{address}}"
+    sortable_fields: ["name", "filter"]
+    fields:
+      - { label: "ID", name: "id", widget: "string", hint: "unikalny identyfikator, np. karmel, europa4. Bez spacji i polskich znaków." }
+      - { label: "Nazwa", name: "name", widget: "string" }
+      - { label: "Adres", name: "address", widget: "string" }
+      - { label: "Filtr lokalizacji", name: "filter", widget: "select", options: ["Bydgoska", "PCK", "Cicha", "Mostowa", "Rynek"] }
+      - { label: "Opis", name: "desc", widget: "text" }
+      - { label: "Udogodnienia", name: "amenities", widget: "list", hint: "dodawaj pojedynczo" }
+      - { label: "Główne zdjęcie (URL)", name: "mainPhoto", widget: "image", hint: "wklej URL zdjęcia" }
+      - { label: "Zdjęcia", name: "photos", widget: "list", field: { label: "URL zdjęcia", name: "url", widget: "image" }, summary: "📷 zdjęcie {{index}}" }
+
+  - name: "reviews"
+    label: "⭐ Opinie gości"
+    label_singular: "Opinia"
+    folder: "data/reviews"
+    create: true
+    delete: true
+    format: "json"
+    extension: "json"
+    identifier_field: "name"
+    summary: "{{name}} — {{apt}} — {{stars}}⭐"
+    sortable_fields: ["stars", "name"]
+    fields:
+      - { label: "Imię", name: "name", widget: "string" }
+      - { label: "Apartament", name: "apt", widget: "string", hint: "nazwa apartamentu, np. Apartament Karmel" }
+      - { label: "Treść", name: "text", widget: "text" }
+      - { label: "Ocena", name: "stars", widget: "number", value_type: "int", min: 1, max: 5, default: 5 }

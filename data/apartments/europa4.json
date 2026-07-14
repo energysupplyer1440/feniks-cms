@@ -1,0 +1,25 @@
+{
+  "id": "europa4",
+  "name": "Apartamenty Europa Ap.4",
+  "address": "Ul. Rynek Nowomiejski 2, Toruń",
+  "filter": "Rynek",
+  "desc": "Nowoczesny apartament oferuje dużą, nowocześnie urządzoną sypialnię, salon z w pełni wyposażonym aneksem kuchennym i luksusową łazienkę z prysznicem. Mieszkanie posiada balkon.",
+  "amenities": [
+    "Balkon",
+    "Piekarnik",
+    "Pralka",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Smart TV",
+    "Suszarka"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2025/07/A3CD2077-F3E8-4C93-B3F5-DBDD20D1F53D-1024x768.jpeg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/A3CD2077-F3E8-4C93-B3F5-DBDD20D1F53D-1024x768.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/A9849645-6ABF-4044-BC3B-3B988DADAC82-1024x768.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/48139DFB-8AFF-4091-8553-D7D6C548241A-1024x768.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/04F324A9-3F95-4BF8-9905-3F5DFAB7F62A-1024x768.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/991E58FB-2BDF-4EE9-BC69-3DCE3568E66E-1024x768.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/07/1659DDFE-20E5-4D33-AF37-85072E02279E-1024x768.jpeg"
+  ]
+}

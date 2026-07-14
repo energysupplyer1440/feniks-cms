@@ -1,0 +1,27 @@
+{
+  "id": "goscinny",
+  "name": "Gościnny Zakątek",
+  "address": "Ul. Cicha 4, Toruń",
+  "filter": "Cicha",
+  "desc": "Nowoczesny apartament oferuje duże, nowocześnie urządzone sypialnie, salon ze stołem bilardowym, w pełni wyposażoną kuchnię i komfortową łazienkę z wanną i prysznicem. Mieszkanie posiada balkon i bezpłatne miejsce parkingowe wzdłuż ulicy.",
+  "amenities": [
+    "Balkon",
+    "Stół bilardowy",
+    "Piekarnik",
+    "Pralka",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Smart TV",
+    "Suszarka",
+    "Parking bezpłatny"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2025/01/image7-1024x683.jpeg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2025/01/image7-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/01/image0-3-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/01/image2-1-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/01/image2-3-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/01/image6-1-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2025/01/image3-3-1024x683.jpeg"
+  ]
+}

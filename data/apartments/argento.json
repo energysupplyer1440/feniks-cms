@@ -1,0 +1,28 @@
+{
+  "id": "argento",
+  "name": "Apartament Argento",
+  "address": "Ul. Polskiego Czerwonego Krzyża 3A, Toruń",
+  "filter": "PCK",
+  "desc": "Apartament oferuje pięknie urządzoną sypialnię, salon z dobrze wyposażonym aneksem kuchennym i łazienkę z prysznicem. Mieszkanie posiada balkon oraz miejsce parkingowe w garażu podziemnym wliczone w cenę. Oferujemy możliwość zakupu śniadania.",
+  "amenities": [
+    "Balkon",
+    "Pralka",
+    "Piekarnik",
+    "Zmywarka",
+    "Bezpłatne WiFi",
+    "Żelazko",
+    "Smart TV",
+    "Suszarka",
+    "Miejsce parkingowe",
+    "Opcja śniadania"
+  ],
+  "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/35b869ad-6c0b-41e2-8fbe-ca822925665b-1-1024x682.jpeg",
+  "photos": [
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/35b869ad-6c0b-41e2-8fbe-ca822925665b-1-1024x682.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/b3152e88-ede4-422d-a7de-1738d9fb9ef1-1-1024x682.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/5b807254-6583-41a8-a72c-8026264ac63e-1024x682.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/c8cab8c5-65e9-454b-95a7-75450c7608a3-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/83fa5ef9-8532-4871-a800-17ed513a67f8-1024x683.jpeg",
+    "https://feniksapartments.pl/wp-content/uploads/2024/03/b5aedfc5-60ee-4d29-866c-814974e1a9f6-1024x683.jpeg"
+  ]
+}
