@@ -1,0 +1,516 @@
+[
+  {
+    "id": "argento",
+    "name": "Apartament Argento",
+    "address": "Ul. Polskiego Czerwonego Krzyża 3A, Toruń",
+    "filter": "PCK",
+    "desc": "Apartament oferuje pięknie urządzoną sypialnię, salon z dobrze wyposażonym aneksem kuchennym i łazienkę z prysznicem. Mieszkanie posiada balkon oraz miejsce parkingowe w garażu podziemnym wliczone w cenę. Oferujemy możliwość zakupu śniadania.",
+    "amenities": [
+      "Balkon",
+      "Pralka",
+      "Piekarnik",
+      "Zmywarka",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Smart TV",
+      "Suszarka",
+      "Miejsce parkingowe",
+      "Opcja śniadania"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/35b869ad-6c0b-41e2-8fbe-ca822925665b-1-1024x682.jpeg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/35b869ad-6c0b-41e2-8fbe-ca822925665b-1-1024x682.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/b3152e88-ede4-422d-a7de-1738d9fb9ef1-1-1024x682.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/5b807254-6583-41a8-a72c-8026264ac63e-1024x682.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/c8cab8c5-65e9-454b-95a7-75450c7608a3-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/83fa5ef9-8532-4871-a800-17ed513a67f8-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/b5aedfc5-60ee-4d29-866c-814974e1a9f6-1024x683.jpeg"
+    ]
+  },
+  {
+    "id": "europa1",
+    "name": "Apartamenty Europa Ap.1",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje sypialnię z salonem, dobrze wyposażoną kuchnię i łazienkę z prysznicem.",
+    "amenities": [
+      "Mikrofala",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_9116-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_9116-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_9150-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_9162-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_9175-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_9189-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa10",
+    "name": "Apartamenty Europa Ap.10",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje przytulną przestrzeń sypialnianą z salonem, dobrze wyposażony aneks kuchenny i łazienkę z prysznicem.",
+    "amenities": [
+      "Mikrofala",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0614-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0614-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0621-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0637-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0612-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0614-1-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0632-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa11",
+    "name": "Apartamenty Europa Ap.11",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje przytulną przestrzeń sypialnianą z salonem, dobrze wyposażony aneks kuchenny i łazienkę z prysznicem.",
+    "amenities": [
+      "Mikrofala",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0440-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0440-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0460-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0500-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0429-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0491-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0421-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa12",
+    "name": "Apartamenty Europa Ap.12",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje przytulną przestrzeń sypialnianą z salonem, dobrze wyposażony aneks kuchenny i łazienkę z prysznicem.",
+    "amenities": [
+      "Mikrofala",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0385-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0385-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0296-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0404-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0365-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0394-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0385-1-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa13",
+    "name": "Apartamenty Europa Ap.13",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje przytulną przestrzeń sypialnianą z salonem, dobrze wyposażony aneks kuchenny i łazienkę z prysznicem.",
+    "amenities": [
+      "Mikrofala",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0235-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0235-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0238-1024x682.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0279-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0248-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0278-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0211-1-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa14",
+    "name": "Apartamenty Europa Ap.14",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje przytulną przestrzeń sypialnianą z salonem, dobrze wyposażony aneks kuchenny i łazienkę z prysznicem.",
+    "amenities": [
+      "Mikrofala",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0154-1-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0154-1-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0205-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0161-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0183-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0172-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa2",
+    "name": "Apartamenty Europa Ap.2",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje dużą, nowocześnie urządzoną sypialnię, salon z w pełni wyposażonym aneksem kuchennym i nowoczesną łazienkę z prysznicem. Mieszkanie posiada balkon.",
+    "amenities": [
+      "Balkon",
+      "Piekarnik",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/Apartament-Europa_0001-1024x684.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/Apartament-Europa_0001-1024x684.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/Apartament-Europa_0002-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/Apartament-Europa_0004-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/Apartament-Europa_0008-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/Apartament-Europa_0005-1024x684.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/Apartament-Europa_0007-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa3",
+    "name": "Apartamenty Europa Ap.3",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje sypialnię z salonem, dobrze wyposażoną kuchnię i łazienkę z prysznicem.",
+    "amenities": [
+      "Mikrofala",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5485-1-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5485-1-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5463-1024x682.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5465-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5503-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5481-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5456-1024x679.jpg"
+    ]
+  },
+  {
+    "id": "europa4",
+    "name": "Apartamenty Europa Ap.4",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Nowoczesny apartament oferuje dużą, nowocześnie urządzoną sypialnię, salon z w pełni wyposażonym aneksem kuchennym i luksusową łazienkę z prysznicem. Mieszkanie posiada balkon.",
+    "amenities": [
+      "Balkon",
+      "Piekarnik",
+      "Pralka",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Smart TV",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2025/07/A3CD2077-F3E8-4C93-B3F5-DBDD20D1F53D-1024x768.jpeg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/A3CD2077-F3E8-4C93-B3F5-DBDD20D1F53D-1024x768.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/A9849645-6ABF-4044-BC3B-3B988DADAC82-1024x768.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/48139DFB-8AFF-4091-8553-D7D6C548241A-1024x768.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/04F324A9-3F95-4BF8-9905-3F5DFAB7F62A-1024x768.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/991E58FB-2BDF-4EE9-BC69-3DCE3568E66E-1024x768.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/1659DDFE-20E5-4D33-AF37-85072E02279E-1024x768.jpeg"
+    ]
+  },
+  {
+    "id": "europa5",
+    "name": "Apartamenty Europa Ap.5",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje sypialnię z salonem, dobrze wyposażoną kuchnię i łazienkę z prysznicem.",
+    "amenities": [
+      "Mikrofala",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0717-1-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0717-1-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0650-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0833-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0689-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0808-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_0821-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa6",
+    "name": "Apartamenty Europa Ap.6",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje artystycznie urządzoną sypialnię, salon z dobrze wyposażonym aneksem kuchennym i łazienkę z prysznicem. Mieszkanie posiada balkon.",
+    "amenities": [
+      "Balkon",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_5600-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_5600-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_5625-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_5665-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_5639-1-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_5694-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/DSC_5654-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa7",
+    "name": "Apartamenty Europa Ap.7",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje 2 nowocześnie urządzone sypialnie, dobrze wyposażoną kuchnię i nowoczesną łazienkę z prysznicem.",
+    "amenities": [
+      "2 sypialnie",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka",
+      "Mikrofala"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9219-1-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9219-1-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9282-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9245-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9303-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9296-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_9253-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "europa8",
+    "name": "Apartamenty Europa Ap.8",
+    "address": "Ul. Rynek Nowomiejski 2, Toruń",
+    "filter": "Rynek",
+    "desc": "Apartament oferuje przytulnie urządzoną sypialnię, salon z dobrze wyposażonym aneksem kuchennym i nowoczesną łazienkę z prysznicem. Piękny widok.",
+    "amenities": [
+      "Widok",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka",
+      "Mikrofala"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5752-1024x681.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5752-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5706-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5744-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5747-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5752-1-1024x681.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/DSC_5723-1024x681.jpg"
+    ]
+  },
+  {
+    "id": "giallo",
+    "name": "Apartament Giallo",
+    "address": "Ul. Polskiego Czerwonego Krzyża 3, Toruń",
+    "filter": "PCK",
+    "desc": "Apartament oferuje pięknie urządzoną sypialnię, salon z dobrze wyposażonym aneksem kuchennym i łazienkę z prysznicem. Mieszkanie posiada dwa balkony oraz miejsce parkingowe w garażu podziemnym wliczone w cenę. Oferujemy możliwość zakupu śniadania.",
+    "amenities": [
+      "2 balkony",
+      "Pralka",
+      "Piekarnik",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Smart TV",
+      "Suszarka",
+      "Miejsce parkingowe",
+      "Opcja śniadania"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/cropped-cid186e0bd4d1ab4c50ac51-scaled-1-1024x654.jpeg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/cropped-cid186e0bd4d1ab4c50ac51-scaled-1-1024x654.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125152412.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0bd4d3485258af23-1024x719.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125152309.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0bd4d6afc8651767-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0bd4d50e4e3036b5-1024x699.jpeg"
+    ]
+  },
+  {
+    "id": "goscinny",
+    "name": "Gościnny Zakątek",
+    "address": "Ul. Cicha 4, Toruń",
+    "filter": "Cicha",
+    "desc": "Nowoczesny apartament oferuje duże, nowocześnie urządzone sypialnie, salon ze stołem bilardowym, w pełni wyposażoną kuchnię i komfortową łazienkę z wanną i prysznicem. Mieszkanie posiada balkon i bezpłatne miejsce parkingowe wzdłuż ulicy.",
+    "amenities": [
+      "Balkon",
+      "Stół bilardowy",
+      "Piekarnik",
+      "Pralka",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Smart TV",
+      "Suszarka",
+      "Parking bezpłatny"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2025/01/image7-1024x683.jpeg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2025/01/image7-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/01/image0-3-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/01/image2-1-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/01/image2-3-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/01/image6-1-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/01/image3-3-1024x683.jpeg"
+    ]
+  },
+  {
+    "id": "karmel",
+    "name": "Apartament Karmel",
+    "address": "Ul. Bydgoska 80, Toruń",
+    "filter": "Bydgoska",
+    "desc": "Elegancki apartament oferuje przytulnie urządzoną sypialnię z łóżkiem dwuosobowym, salon z dobrze wyposażonym aneksem kuchennym i nowoczesną łazienkę z prysznicem.",
+    "amenities": [
+      "Piekarnik",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Deska do prasowania",
+      "Smart TV",
+      "Suszarka",
+      "Pralka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1665-1-1024x768.jpeg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1665-1-1024x768.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1664-1024x768.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1663-1024x768.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1662-1024x768.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1661-1024x576.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2025/07/IMG_1666-1024x768.jpeg"
+    ]
+  },
+  {
+    "id": "nero",
+    "name": "Apartament Nero",
+    "address": "Ul. Polskiego Czerwonego Krzyża 3, Toruń",
+    "filter": "PCK",
+    "desc": "Apartament oferuje 2 sypialnie, salon z dobrze wyposażonym aneksem kuchennym i łazienkę z prysznicem. Mieszkanie posiada 2 balkony oraz miejsce parkingowe w garażu podziemnym wliczone w cenę. Oferujemy możliwość zakupu śniadania.",
+    "amenities": [
+      "2 sypialnie",
+      "2 balkony",
+      "Pralka",
+      "Piekarnik",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka",
+      "Miejsce parkingowe",
+      "Opcja śniadania"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125143210-2.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125143210-2.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125150249.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0008-2-e1695821593881.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20230927153559.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20230927153536.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0027.jpg"
+    ]
+  },
+  {
+    "id": "szymborska1",
+    "name": "Apartament Szymborska Nr.1",
+    "address": "Ul. Mostowa 18, Toruń",
+    "filter": "Mostowa",
+    "desc": "Elegancki apartament oferuje dużą, przytulnie urządzoną sypialnię z łóżkiem typu King size, salon z dobrze wyposażonym aneksem kuchennym i nowoczesną łazienkę z prysznicem.",
+    "amenities": [
+      "Łóżko King size",
+      "Zmywarka",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Smart TV",
+      "Suszarka",
+      "Pralka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0273-1024x683.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0273-1024x683.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0274-1024x683.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0277-1024x683.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0272-1024x678.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0282-1024x683.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0275-1024x683.jpg"
+    ]
+  },
+  {
+    "id": "szymborska2",
+    "name": "Apartament Szymborska Nr.2",
+    "address": "Ul. Mostowa 18, Toruń",
+    "filter": "Mostowa",
+    "desc": "Elegancki apartament oferuje dużą, przytulnie urządzoną przestrzeń sypialnianą z łóżkiem typu King size, salon z dobrze wyposażonym aneksem kuchennym i nowoczesną łazienkę z prysznicem. Piękny widok na zabytkową ulicę.",
+    "amenities": [
+      "Łóżko King size",
+      "Widok na zabytki",
+      "Zmywarka",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Smart TV",
+      "Suszarka"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0270-1024x683.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0270-1024x683.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0271-1024x683.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0269-1024x683.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0268-1024x683.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2024/03/IMG_0268-1024x683.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/IMG_0270-1-1024x683.jpg"
+    ]
+  },
+  {
+    "id": "tricolore",
+    "name": "Apartament Tricolore",
+    "address": "Ul. Polskiego Czerwonego Krzyża 3, Toruń",
+    "filter": "PCK",
+    "desc": "Apartament oferuje pięknie urządzoną sypialnię, salon z dobrze wyposażonym aneksem kuchennym i łazienkę z prysznicem. Mieszkanie posiada balkon oraz miejsce parkingowe w garażu podziemnym wliczone w cenę. Oferujemy możliwość zakupu śniadania.",
+    "amenities": [
+      "Balkon",
+      "Pralka",
+      "Piekarnik",
+      "Bezpłatne WiFi",
+      "Żelazko",
+      "Telewizor",
+      "Suszarka",
+      "Miejsce parkingowe",
+      "Opcja śniadania"
+    ],
+    "mainPhoto": "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125150720.jpg",
+    "photos": [
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/AirBrush_20220125150720.jpg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0ce2a056976cf696-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0ce29bfdcd2b0cf1-1024x683.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0bd4d8323813659-1024x728.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0ce29cecf8740052-1024x697.jpeg",
+      "https://feniksapartments.pl/wp-content/uploads/2023/09/cid186e0ce29eb6586a7ea4-1024x698.jpeg"
+    ]
+  }
+]

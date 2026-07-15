@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Anna",
+    "apt": "Apartament Karmel",
+    "text": "Przepiękny apartament! Bardzo czysto, gustownie urządzony. Łóżko wygodne, kuchnia w pełni wyposażona. Lokalizacja super — blisko centrum. Na pewno wrócimy!",
+    "stars": 5
+  },
+  {
+    "name": "Robert",
+    "apt": "Apartamenty Europa Ap.7",
+    "text": "Dwie sypialnie — idealnie dla naszej czwórki. Kuchnia wyposażona we wszystko co potrzebne. Bezproblemowe zameldowanie i kontakt z obsługą na najwyższym poziomie.",
+    "stars": 5
+  },
+  {
+    "name": "Joanna",
+    "apt": "Apartamenty Europa Ap.8",
+    "text": "Piękny widok z okna! Apartament urządzony z dbałością o detale. Polecam każdemu kto ceni sobie wygodę i estetykę. Na pewno wrócimy przy okazji kolejnej wizyty w Toruniu.",
+    "stars": 5
+  },
+  {
+    "name": "Marek",
+    "apt": "Apartamenty Europa Ap.12",
+    "text": "Świetne apartamenty! Byłem już kilka razy i zawsze jestem zadowolony. Profesjonalna obsługa, czysto, wygodnie. Toruń piękny, a Feniks Apartments to najlepszy wybór.",
+    "stars": 5
+  },
+  {
+    "name": "Tomasz",
+    "apt": "Apartament Argento",
+    "text": "Bardzo dobry standard. Podobał nam się balkon i garaż podziemny. Śniadanie zamówione dodatkowo było pyszne i świeże. Polecam każdemu kto szuka komfortu w Toruniu.",
+    "stars": 5
+  },
+  {
+    "name": "Katarzyna",
+    "apt": "Apartament Tricolore",
+    "text": "Świetna lokalizacja, apartament urządzony ze smakiem. Wszystko co potrzebne na miejscu. Cisza, spokój, a do Starego Miasta rzut beretem. Idealny na weekend.",
+    "stars": 5
+  },
+  {
+    "name": "Michał",
+    "apt": "Gościnny Zakątek",
+    "text": "Stół bilardowy to strzał w dziesiątkę! Spędziliśmy fantastyczny wieczór z przyjaciółmi. Apartament przestronny, łazienka z wanną bardzo komfortowa. Parking bez problemu.",
+    "stars": 5
+  },
+  {
+    "name": "Ewa",
+    "apt": "Apartament Szymborska Nr.1",
+    "text": "Łóżko King size to marzenie! Apartament położony na urokliwej starówce. Widok z okna na zabytkową ulicę — bajka. Zdecydowanie polecam parom szukającym romantycznego pobytu.",
+    "stars": 5
+  },
+  {
+    "name": "Piotr",
+    "apt": "Apartament Szymborska Nr.2",
+    "text": "Rewelacyjny apartament w samym sercu Torunia. Czysto, nowocześnie, a widok na Mostową robi ogromne wrażenie. Świetna baza wypadowa do zwiedzania miasta.",
+    "stars": 5
+  },
+  {
+    "name": "Magdalena",
+    "apt": "Apartament Giallo",
+    "text": "Apartament z dwoma balkonami — super sprawa na wieczorną kawę. Parking w garażu podziemnym duży plus. Wnętrze pięknie urządzone, wszystko nowe i zadbane.",
+    "stars": 5
+  },
+  {
+    "name": "Łukasz",
+    "apt": "Apartament Nero",
+    "text": "Duży apartament z dwoma sypialniami i dwoma balkonami. Idealny dla rodziny z dziećmi. Byliśmy zachwyceni standardem i czystością. Śniadanie pyszne!",
+    "stars": 5
+  },
+  {
+    "name": "Agnieszka",
+    "apt": "Apartamenty Europa Ap.4",
+    "text": "Nowy, luksusowy apartament — wszystko lśniło czystością. Balkon, smart TV, wygodne łóżko. Cicha okolica, a jednocześnie blisko Rynku Nowomiejskiego. Bardzo polecam!",
+    "stars": 5
+  }
+]
