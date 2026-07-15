@@ -5,7 +5,7 @@ backend:
   name: github
   repo: energysupplyer1440/feniks-cms
   branch: main
-  base_url: https://decap-proxy-production-1fc7up.railway.app
+  base_url: https://decap-proxy-fixed-production.up.railway.app
   auth_endpoint: /auth
 
 site_url: https://energysupplyer1440.github.io/feniks-cms
