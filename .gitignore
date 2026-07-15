@@ -1,6 +1,2 @@
-# Built files (generowane przez scripts/build.js)
-data/apartments.json
-data/reviews.json
-
 # Node
 node_modules/
