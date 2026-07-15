@@ -5,8 +5,9 @@ backend:
   name: github
   repo: energysupplyer1440/feniks-cms
   branch: main
+  base_url: https://oauth.decap-cms.com
+  auth_endpoint: auth
 
-# Gdy wrzucisz repo na GitHub i skonfigurujesz OAuth, CMS będzie dostępny pod:
 site_url: https://energysupplyer1440.github.io/feniks-cms
 display_url: https://energysupplyer1440.github.io/feniks-cms
 logo_url: https://feniksapartments.pl/wp-content/uploads/2023/09/cropped-cid186e0bd4d1ab4c50ac51-scaled-1-1024x654.jpeg
