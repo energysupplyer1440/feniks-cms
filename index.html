@@ -4,6 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feniks Apartments - Toruń</title>
+    <meta name="description" content="Luksusowe apartamenty w sercu Torunia — 19 apartamentów w 6 lokalizacjach. Idealne na krótki i długi pobyt. Rezerwuj online!">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "@id": "https://energysupplyer1440.github.io/feniks-cms",
+      "name": "Feniks Apartments",
+      "description": "Luksusowe apartamenty w sercu Torunia. 19 apartamentów w 6 lokalizacjach — idealne na krótki i długi pobyt.",
+      "url": "https://energysupplyer1440.github.io/feniks-cms",
+      "telephone": "+48 XXX XXX XXX",
+      "email": "kontakt@feniksapartments.pl",
+      "image": "https://feniksapartments.pl/wp-content/uploads/2023/09/cropped-cid186e0bd4d1ab4c50ac51-scaled-1-1024x654.jpeg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Toruń",
+        "addressCountry": "PL"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "ratingCount": "10"
+      },
+      "priceRange": "$$",
+      "amenityFeature": [
+        {"@type":"LocationFeatureSpecification","name":"Bezpłatne WiFi"},
+        {"@type":"LocationFeatureSpecification","name":"Parking"},
+        {"@type":"LocationFeatureSpecification","name":"Cicha okolica"},
+        {"@type":"LocationFeatureSpecification","name":"Blisko Starego Miasta"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://energysupplyer1440.github.io/feniks-cms/#website",
+      "url": "https://energysupplyer1440.github.io/feniks-cms",
+      "name": "Feniks Apartments - Toruń",
+      "description": "Luksusowe apartamenty w sercu Torunia. Rezerwuj online!",
+      "inLanguage": "pl-PL",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://energysupplyer1440.github.io/feniks-cms/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Google Consent Mode v2 — default denied -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'granted',
+        'personalization_storage': 'denied',
+        'security_storage': 'granted',
+        'wait_for_update': 2000
+      });
+      gtag('set', 'ads_data_redaction', true);
+      gtag('set', 'url_passthrough', true);
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-XXXXXXX');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -565,9 +644,100 @@
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #999; }
+
+        /* COOKIE CONSENT */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            background: var(--dark);
+            color: white;
+            padding: 1.25rem 2rem;
+            display: none;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.3);
+            animation: cookieSlideUp 0.4s ease-out;
+        }
+        @keyframes cookieSlideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        .cookie-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .cookie-text {
+            flex: 1;
+            min-width: 250px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: rgba(255,255,255,0.85);
+        }
+        .cookie-text a {
+            color: var(--gold-light);
+            text-decoration: underline;
+        }
+        .cookie-buttons {
+            display: flex;
+            gap: 0.75rem;
+            flex-shrink: 0;
+        }
+        .cookie-btn {
+            padding: 0.6rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+        .cookie-btn-accept {
+            background: var(--gold);
+            color: white;
+        }
+        .cookie-btn-accept:hover { background: #b89430; }
+        .cookie-btn-reject {
+            background: transparent;
+            color: rgba(255,255,255,0.7);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .cookie-btn-reject:hover {
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+        @media (max-width: 640px) {
+            .cookie-consent { padding: 1rem; }
+            .cookie-inner { flex-direction: column; text-align: center; }
+            .cookie-buttons { width: 100%; justify-content: center; }
+        }
     </style>
 </head>
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- COOKIE CONSENT BANNER -->
+<div class="cookie-consent" id="cookieConsent">
+    <div class="cookie-inner">
+        <div class="cookie-text">
+            🍪 Ta strona używa plików cookie, aby zapewnić najlepsze doświadczenia oraz do analizy ruchu.
+            <a href="#" onclick="event.preventDefault()">Polityka prywatności</a>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn cookie-btn-reject" onclick="rejectCookies()">Tylko niezbędne</button>
+            <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Akceptuję wszystkie</button>
+        </div>
+    </div>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -653,6 +823,38 @@
 </div>
 
 <script>
+// ===== COOKIE CONSENT =====
+function getCookiePref() {
+    return localStorage.getItem('cookieConsent');
+}
+
+function setCookiePref(val) {
+    localStorage.setItem('cookieConsent', val);
+    gtag('consent', 'update', {
+        'analytics_storage': val === 'accepted' ? 'granted' : 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+    });
+    document.getElementById('cookieConsent').style.display = 'none';
+}
+
+function acceptCookies() { setCookiePref('accepted'); }
+function rejectCookies() { setCookiePref('rejected'); }
+
+// Show cookie banner if no preference saved yet
+document.addEventListener('DOMContentLoaded', function() {
+    const pref = getCookiePref();
+    if (!pref) {
+        document.getElementById('cookieConsent').style.display = 'block';
+    } else {
+        // Restore consent state (e.g. after page navigation)
+        gtag('consent', 'update', {
+            'analytics_storage': pref === 'accepted' ? 'granted' : 'denied',
+        });
+    }
+});
+
 // ===== DATA LOADER =====
 let apartments = [];
 let reviews = [];
@@ -887,6 +1089,36 @@ function openModal(id) {
     
     openCalendarForApt(apt);
     
+    // Dynamic JSON-LD for this apartment
+    const oldLd = document.getElementById('aptJsonLd');
+    if (oldLd) oldLd.remove();
+    const ldScript = document.createElement('script');
+    ldScript.id = 'aptJsonLd';
+    ldScript.type = 'application/ld+json';
+    ldScript.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": apt.name,
+      "description": apt.desc,
+      "image": apt.photos,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": apt.address,
+        "addressLocality": "Toruń",
+        "addressCountry": "PL"
+      },
+      "amenityFeature": apt.amenities.map(a => ({
+        "@type": "LocationFeatureSpecification",
+        "name": a
+      })),
+      "containedInPlace": {
+        "@type": "LodgingBusiness",
+        "name": "Feniks Apartments",
+        "url": "https://energysupplyer1440.github.io/feniks-cms"
+      }
+    });
+    document.head.appendChild(ldScript);
+    
     document.getElementById('modalOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
 }
@@ -923,7 +1155,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 
 // Load data on page load
 loadData();
-</script></script>
+</script>
 
 </body>
 </html>
